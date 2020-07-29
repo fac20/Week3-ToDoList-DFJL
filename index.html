@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title> To Do List </title>
 </head>
 <body>
-    
+    <header>
+        <h1>To do List</h1>
+    </header>
+    <main>
+       <section class ="today-area">
+        <ul class="to-do-list today">
+        </ul>
+       </section>
+       <section class="tomorrow-area">
+        <ul class="to-do-list tomorrow">
+        </ul>
+       </section>
+       <section class="this-week-area">
+        <ul class="to-do-list this-week">
+        </ul>
+       </section>
+       <section class="this-month-area">
+        <ul class="to-do-list this-month">
+        </ul>           
+       </section>
+
+       <section>
+        <form>
+           <label for="date-select">When?</label>
+           <select name="date" id="date-select" required>
+                <option value="">--Please choose an option--</option>
+                <option value="today">Today</option>
+                <option value="tomorrow">Tomorrow</option>
+                <option value="this-week">This week</option>
+                <option value="This month">This month</option>
+            </select>
+            <label for="activity-input">What?</label>
+            <input type="text" id="activity-selct" name="activity-selct" placeholder="Add an item to your list"required>
+            <input type="submit" value="Submit">
+           </form>
+       </section>
+
+    </main>
+    <footer>
+    </footer>
 </body>
 <script src="scripts.js"></script>
 <script src="test-helpers.js"></script>

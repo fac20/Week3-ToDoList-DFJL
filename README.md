@@ -7,3 +7,9 @@ In this project we've made a To Do List, focussing on developing our testing ski
 * Designer - Lisa
 * Quality - Josh
 * Deployment - Amber
+
+## Tools used 
+- Figma
+- crazy 8s methodology
+- pen and paper 
+- html, css and vanilla javascript 
