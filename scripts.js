@@ -19,3 +19,24 @@ form.addEventListener("submit", function(event){
     event.preventDefault()
     addTemplate()
 });
+
+
+//Toggling 
+// let checkboxes = document.getElementsByClassName("checkbox");
+// console.log(checkboxes)
+
+// const toggleCheckbox = (event) => {    
+//     if (event.target.value === "on") {
+//         event.target.value = "";
+//         console.log(event)
+//     } else {
+//         event.target.value = "on";
+//         console.log(event)
+//     }
+// };
+
+
+
+// checkboxes.forEach( checkbox => {
+//     checkbox.addEventListener("click", toggleCheckbox)
+// });
