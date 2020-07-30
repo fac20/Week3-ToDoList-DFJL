@@ -1,0 +1,74 @@
+main {
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr); */
+    grid-template-areas: 'today' 
+                         'tomorrow' 
+                         'this-week' 
+                         'this-month';
+    margin-bottom: 4rem;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.bubble {
+    height: 20rem;
+    width: 20rem;
+    margin: auto;
+    border-radius: 40%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.today-area {
+    grid-area: today;
+    background: blue;
+}
+
+.tomorrow-area {
+    grid-area: tomorrow;
+    background-color: aqua;
+}
+
+.this-week-area {
+    grid-area: this-week;
+    background-color: red;
+}
+
+.this-month-area {
+    grid-area: this-month;
+    background-color: brown;
+}
+
+.add-list-item {
+    position: fixed;
+    bottom: 0;
+    background-color: burlywood;
+    padding-top: 1rem;
+}
+
+form {
+    width: 100vw;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+
+    main {
+    grid-template-areas:'today .' 
+                        '. tomorrow' 
+                        'this-week .' 
+                        '.this-month';
+    }
+}
+
+
+
