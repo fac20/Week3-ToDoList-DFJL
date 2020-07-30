@@ -12,4 +12,4 @@ In this project we've made a To Do List, focussing on developing our testing ski
 - Figma
 - crazy 8s methodology
 - pen and paper 
-- html, css and vanilla javascript 
+- html, css and vanilla javascript  
