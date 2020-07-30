@@ -24,8 +24,8 @@ ul{
     border-radius: 40%;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
-    overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-y: auto;
+    padding: 1rem;
 }
 
 .today-area {
