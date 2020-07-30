@@ -1,7 +1,5 @@
 let activity = document.querySelector("#activity-select");
-let time = document.querySelector("#date-select")
-const checkbox = '<input type="checkbox" name="checkbox" id="checkbox">';
-
+let time = document.querySelector("#date-select");
 
 const addTemplate = () => {
     let template = document.getElementById('template'); // select the template element
@@ -15,6 +13,14 @@ const addTemplate = () => {
 
 const form = document.querySelector("form");
 form.addEventListener("submit", function(event){
-    event.preventDefault()
-    addTemplate()
+    event.preventDefault();
+    addTemplate();
 });
+
+//Function to delete items in the list when the delete button is clicked
+document.addEventListener("click", (e) => { //when the document is clicked
+    if (e.target.className === 'delete-button') { //if the item clicked has a class of 'delete-button'
+        e.target.parentNode.remove(); //remove its parent node (the entire list item)
+    }
+});
+
