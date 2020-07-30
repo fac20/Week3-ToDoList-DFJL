@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title> To Do List </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do List</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1 id="todo">To do List</h1>
+      <h1 id="todo">Post It, Do It, Forget It</h1>
     </header>
     <main>
-       <section class ="bubble today-area">
-        <h2> Today </h2>
-        <ul class="to-do-list today">
-        </ul>
-       </section>
-       <section class="bubble tomorrow-area">
-        <h2> Tomorrow </h2>
-        <ul class="to-do-list tomorrow">
-        </ul>
-       </section>
-       <section class="bubble bubble this-week-area">
-        <h2> This week </h2>
-        <ul class="to-do-list this-week">
-        </ul>
-       </section>
-       <section class="bubble bubble this-month-area">
-        <h2> This month </h2>
-        <ul class="to-do-list this-month">
-        </ul>           
-       </section>
+      <section class="bubble today-area">
+        <h2>Today</h2>
+        <ul class="to-do-list today"></ul>
+      </section>
+      <section class="bubble tomorrow-area">
+        <h2>Tomorrow</h2>
+        <ul class="to-do-list tomorrow"></ul>
+      </section>
+      <section class="bubble this-week-area">
+        <h2>This week</h2>
+        <ul class="to-do-list this-week"></ul>
+      </section>
+      <section class="bubble this-month-area">
+        <h2>This month</h2>
+        <ul class="to-do-list this-month"></ul>
+      </section>
 
-       <section class="add-list-item">
+      <section class="add-list-item">
         <form>
-           <label for="date-select">When?</label>
-           <select name="date" id="date-select" required>
-                <option value="">--Please choose an option--</option>
-                <option value="today">Today</option>
-                <option value="tomorrow">Tomorrow</option>
-                <option value="this-week">This week</option>
-                <option value="this-month">This month</option>
-            </select>
-            <label for="activity-input">What?</label>
-            <input type="text" id="activity-select" name="activity-select" placeholder="Add an item to your list"required>
-            <input type="submit" value="Submit" class="submit">
-           </form>
-       </section>
-
+          <label for="date-select">When?</label>
+          <select name="date" id="date-select" required>
+            <option value="">--Please choose an option--</option>
+            <option value="today">Today</option>
+            <option value="tomorrow">Tomorrow</option>
+            <option value="this-week">This week</option>
+            <option value="this-month">This month</option>
+          </select>
+          <label for="activity-select">What?</label>
+          <input
+            type="text"
+            id="activity-select"
+            name="activity-select"
+            class="activity-select"
+            placeholder="Add an item to your list"
+            required
+          />
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+      </section>
     </main>
-    <footer>
-    </footer>
+    <footer></footer>
 
-    <template id="template"> 
-        <li class="listItem">
-            <input type="checkbox" name="checkbox" class="checkbox">
-            <button type="button" class="delete-button"> Delete </button>
-        </li>
+    <template id="template">
+      <li class="listItem">
+        <input
+          type="checkbox"
+          name="checkbox"
+          class="checkbox"
+          aria-label="Completed checkbox"
+        />
+        <button type="button" class="delete-button"></button>
+      </li>
     </template>
-</body>
-<script src="scripts.js"></script>
-<script src="test-helpers.js"></script>
-<script src="tests.js"></script>
+  </body>
+  <script src="scripts.js"></script>
+  <script src="test-helpers.js"></script>
+  <script src="tests.js"></script>
 </html>
