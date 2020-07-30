@@ -22,5 +22,9 @@ document.addEventListener("click", (e) => { //when the document is clicked
     if (e.target.className === 'delete-button') { //if the item clicked has a class of 'delete-button'
         e.target.parentNode.remove(); //remove its parent node (the entire list item)
     }
+
+    if (e.target.className === "checkbox") {
+        e.target.parentNode.classList.toggle("strikethrough");
+    }
 });
 
