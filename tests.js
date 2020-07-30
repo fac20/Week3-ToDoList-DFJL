@@ -64,7 +64,7 @@ test("the created element contains the text input that was submitted", t=> {
     let thisMonthSection = document.querySelector(".this-month");
     let appendedItem = thisMonthSection.querySelector(".listItem");
     let expected = "Have a little dance";
-    let result = appendedItem.innerText;
+    let result = appendedItem.childNodes[2].textContent;
     t.equal(result, expected);
 })
 
@@ -82,4 +82,17 @@ test("Checkbox changes when clicked", t=> {
     let result = completeCheckbox.value;
     t.equal(result, expected);
 
+})
+
+
+// Click delete button will remove input 
+
+test("click delete button will remove input", t=> {
+    let thisMonthSection = document.querySelector(".this-month");
+    let appendedItem = thisMonthSection.querySelector(".listItem"); 
+    let deleteButton = appendedItem.querySelector(".delete-button");
+    deleteButton.click();
+    let expected = null;
+    let result = thisMonthSection.querySelector(".listItem");
+    t.equal(result, expected);
 })
