@@ -1,23 +1,24 @@
 // Submit Button will submit only if text is inputted
 let submit = document.querySelector(".submit"); //submit button;
-let input = document.querySelector(".input"); //test input
 let listItems = document.getElementsByClassName("listItem");
-
-test("Submit Button will submit only if text is inputted", t => {
+// test("Submit Button will submit only if text is inputted", t => {
  
-    input.value = "";
-    let result = 
-    t.equal(result, expected);
-})
+//     input.value = "";
+//     let result = 
+//     t.equal(result, expected);
+// })
 
 // Element is created that contains text input
 
-test("Element is created", t => {
-    input.value = "Fishsticks";
+test("Element is created and appended to the correct location", t => {
+    activity.value = "Do Washing Up";
+    time.value = "today";
     submit.click();
-    const expected = 2;
-    t.equal(listItem.length, expected)
-    
+    let todaySection = document.querySelector(".today");
+    let appendedItem = todaySection.querySelector(".listItem");
+    const expected = true;
+    let result = todaySection.contains(appendedItem); 
+    t.equal(result, expected);
 })
 
 test("the created element contains the text input that was submitted", t=> {
@@ -29,7 +30,6 @@ test("the created element contains the text input that was submitted", t=> {
     t.equal(result, expected);
 })
 
-// Element is appended to correct location
-test("element is appended to the correct location")
+
 
 // Click check box and it changes
