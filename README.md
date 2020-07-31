@@ -1,7 +1,7 @@
-# Post-it, Do-it, Forget it
+# Post-it, Do-it, Forget it :brain: 
 In this project we've made a To Do List, focussing on developing our testing skills
 
-## Process
+## Process :hammer:
 1. Crazy 8s - we each took 8 minutes to come up with 8 different ideas for types of To Do Lists
 2. Refine - we highlighted features we liked
 3. Discuss - we went back to the drawing board to figure out what our project was going to look like 
@@ -12,24 +12,24 @@ _Check out our sketches and wireframe [here](https://www.figma.com/file/qe3AHHHK
 7. Get to work ! We split up into pairs to get everything done, switching our pairs regularly so that everyone pair programmed with each other
 8. Address code review issues  
 
-## Motivation
+## Motivation :muscle:
 This project was built as part of the testing week of Founders and Coders - the main focus was learning how to go about Test-Driven Development
 
-## Roles for the Week
+## Roles for the Week 
 
 * Scrum Master/Servant - My Hoa
 * Designer - Lisa
 * Quality - Josh
 * Deployment - Amber
 
-## Tools used 
+## Tools used :wrench:
 - Figma
 - crazy 8s methodology
 - pen and paper 
 - html, css and vanilla javascript 
 - coolours 
 
-## Tests 
+## Tests :alarm_clock:
 We wrote up 8 different tests, which you'll see in the console when you check out our project. 
 We used a test-helpers.js file which we took from previous workshops. 
 -- insert image of the tests in console -- 
