@@ -8,7 +8,6 @@ test("Submit Button will submit only if text is inputted", (t) => {
   submit.click();
   let todaySection = document.querySelector(".today");
   let appendedItem = todaySection.querySelector(".listItem");
-  console.log(appendedItem);
   const expected = null;
   let result = appendedItem;
   t.equal(result, expected);
@@ -84,13 +83,14 @@ test("Checkbox changes when clicked", (t) => {
   t.equal(result, expected);
 });
 
-test("End-to-end", (t) => {
-  activity.value = "";
-  time.value = "today";
-  submit.click();
-  let todaySection = document.querySelector(".today");
-  let appendedItem = todaySection.querySelector(".listItem");
-  const expected = false;
-  let result = todaySection.contains(appendedItem);
+// Click delete button will remove input
+
+test("click delete button will remove input", (t) => {
+  let thisMonthSection = document.querySelector(".this-month");
+  let appendedItem = thisMonthSection.querySelector(".listItem");
+  let deleteButton = appendedItem.querySelector(".delete-button");
+  deleteButton.click();
+  let expected = null;
+  let result = thisMonthSection.querySelector(".listItem");
   t.equal(result, expected);
 });
