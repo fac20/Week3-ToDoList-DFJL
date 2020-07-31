@@ -88,7 +88,7 @@ label,
 #date-select,
 #activity-select,
 .submit {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .submit {
@@ -104,7 +104,7 @@ label,
     hsl(334, 65%, 81%)
   );
   transition: 0.6s;
-  margin-left: 1em;
+  margin-left: 1rem;
 }
 
 .submit:hover {
@@ -129,17 +129,13 @@ label,
   width: 1.5rem;
   border: none;
   background: none;
-  background-image: url(/images/delete.svg);
+  background-image: url(images/delete.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  visibility: hidden;
   margin: 0.5rem;
   display: inline-block;
   position: relative;
   top: 0.5rem;
-}
-.listItem:hover .delete-button {
-  visibility: visible;
 }
 
 @media only screen and (min-width: 750px) {
@@ -150,6 +146,12 @@ label,
       "this-week ."
       ".this-month";
   }
+  .delete-button { 
+  visibility: hidden;
+}
+.listItem:hover .delete-button {
+  visibility: visible;
+}
 }
 
 @media only screen and (min-width: 800px) {
