@@ -34,13 +34,15 @@ We wrote up 8 different tests, which you'll see in the console when you check ou
 We used a test-helpers.js file which we took from previous workshops. 
 -- insert image of the tests in console -- 
 
-## Bugs and improvements / To do :bug: 
+## Bugs and improvements already made
 - Change file path to show the delete button :white_check_mark:
 - Make form on mobile cleaner :white_check_mark:
 - Refactor code :white_check_mark:
-- Increase checkbox size on mobile :white_check_mark:
 - Change some of our units to rem in the css :white_check_mark:
 - Updated READme :white_check_mark:
+
+## To do :bug: 
+- Increase checkbox size on mobile
 
 ## Stretch goals :runner:
 - Hamburger menu for input form 
