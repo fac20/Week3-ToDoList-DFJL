@@ -38,28 +38,31 @@
 
       <section class="add-list-item">
         <form>
-          <label for="date-select">When?</label>
-          <select name="date" id="date-select" required>
-            <option value="">--Please choose an option--</option>
-            <option value="today">Today</option>
-            <option value="tomorrow">Tomorrow</option>
-            <option value="this-week">This week</option>
-            <option value="this-month">This month</option>
-          </select>
-          <label for="activity-select">What?</label>
-          <input
-            type="text"
-            id="activity-select"
-            name="activity-select"
-            class="activity-select"
-            placeholder="Add an item to your list"
-            required
-          />
+          <div class="form-input">
+            <label for="date-select">When?</label>
+            <select name="date" id="date-select" required>
+              <option value="">--Please choose an option--</option>
+              <option value="today">Today</option>
+              <option value="tomorrow">Tomorrow</option>
+              <option value="this-week">This week</option>
+              <option value="this-month">This month</option>
+            </select>
+          </div>
+          <div class="form-input">
+            <label for="activity-select">What?</label>
+            <input
+              type="text"
+              id="activity-select"
+              name="activity-select"
+              class="activity-select"
+              placeholder="Add an item to your list"
+              required
+            />
+          </div>
           <input type="submit" value="Submit" class="submit" />
         </form>
       </section>
     </main>
-    <footer></footer>
 
     <template id="template">
       <li class="listItem">
